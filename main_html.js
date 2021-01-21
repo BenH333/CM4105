@@ -6,5 +6,5 @@ const server = http.createServer((req, res) => {
     fs.createReadStream('myWebPage.html').pipe(res)
 })
 
-server.listem(process.env.PORT || 8000)
+server.listen(process.env.PORT || 8000)
 console.log('Server running at http://127.0.0.1:8000');
